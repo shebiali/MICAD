@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title layout:title-pattern="$DECORATOR_TITLE - $CONTENT_TITLE">MICAD</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<div th:replace="fragments/header :: header">
+    <div>
+        <div>
+            <div>
+           <a href="#">Home</a>
+           <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div layout:fragment="content">
+        <h1>Dummy content for offline purposes </h1>
+     </div>
+    <div th:replace="fragments/footer :: footer">&copy; 2015, By Shahbaz Ali (offline)</div>
+</div>
+</body>
+</html>
