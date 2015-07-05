@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>MICAD</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<div th:fragment="header">
+   <div>
+	   <a href="#" th:href="@{/}">Home</a>
+	   <a href="#" th:href="@{/contact}">Contact</a>
+   </div>
+</div>
+
+    
+<div th:fragment="footer"> 
+	<p th:text = "#{footer.text}" />	
+</div>
+
+</body>
+</html>
